@@ -46,7 +46,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top"><img src="img/omniseasonlogo.png"/></a>
+                <a class="navbar-brand page-scroll" href="#page-top"><img class="img1" src="img/omniseasonlogo.png"/></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -76,7 +76,7 @@
             <div class="header-content-inner">
                 <img class="mainImg"src="img/omniseasonlogoMain.png" alt="logo"/>
                 <hr>
-                <p>Changing the world of property maintenance.</p>
+                <p class="openPage">Changing the world of property maintenance.</p>
                 <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
             </div>
         </div>
@@ -89,7 +89,7 @@
                     <h2 class="section-heading">The Difference</h2>
                     <hr class="light">
                     <p class="text-faded">We are changeing the world of property maintenance. With our software requesting a bid has been simplified, with modern technology and the best tradesmen we will have a bid at the click of a button and the best work to back it up. We are taking over property maintenance. </p>
-                    <a href="#calculator" class="btn btn-default btn-xl">Request Bid.</a>
+                    <a href="#calculator" class="btn btn-default btn-xl page-scroll">Request Bid.</a>
                 </div>
             </div>
         </div>
@@ -143,7 +143,7 @@
     <p>Hover your mouse over the desired service to get pricing from high to low.</p>
 <style>
 body{
-    
+    max-width: 100%;
     margin:50px auto;
 }
 path {  stroke: #fff; }
@@ -174,7 +174,7 @@ rect:hover {  fill:gray; }
 }
 .legendFreq, .legendPerc{
     align:right;
-    width:50px;
+    max-width:100%;
 }
 
 </style>
@@ -422,7 +422,7 @@ dashboard('#dashboard',freqData);
     <aside class="bg-dark">
         <div class="container text-center">
             <div class="call-to-action">
-                <h1>Service Calculator</h1>
+                <h1>Omni Calculator</h1>
                 </br>
                     <div class="dropdown">
                       <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -435,7 +435,7 @@ dashboard('#dashboard',freqData);
                         <li><a href="#">Window Cleaning</a></li>
                         <li><a href="#">Snow Removal</a></li>
                       </ul>
-                    </div>
+                    </div> 
                 <h3>Size of Property</h3>
                     <div class="btn-group" role="group" aria-label="buttonMenu">
                        <button type="button" class="btn btn-default">Small</button>
@@ -448,13 +448,15 @@ dashboard('#dashboard',freqData);
                   </br>
                   <h3>Services Per Month</h3>
                   </br>
-<!-- 
-                    <div class="btn-toolbar" role="toolbar" aria-label="...">
-                      <div class="btn-group" role="group" aria-label="...">...</div>
-                      <div class="btn-group" role="group" aria-label="...">...</div>
-                      <div class="btn-group" role="group" aria-label="...">...</div>
+
+                      <div class="btn-group" role="group" aria-label="buttonMenu">
+                       <button type="button" class="btn btn-default">One</button>
+                       <button type="button" class="btn btn-default">Two</button>
+                       <button type="button" class="btn btn-default">Three</button>
+                       <button type="button" class="btn btn-default">Four</button>
                     </div>
- -->
+                    </br>
+
                 <a href="#" class="btn btn-default btn-xl wow tada">Request Bid</a>
             </div>
             <div></div>
