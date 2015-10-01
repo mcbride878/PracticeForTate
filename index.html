@@ -9,17 +9,21 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Caden McBride</title>
+    <title>OmniSeason</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="css/landing-page.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
 
     <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/creative.css" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -30,212 +34,448 @@
 
 </head>
 
-<body>
+<body id="page-top">
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
-        <div class="container topnav">
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand topnav" href="#">Caden McBride</a>
+                <a class="navbar-brand page-scroll" href="#page-top"><img src="img/omniseasonlogo.png"/></a>
             </div>
+
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="#about">Home</a>
+                        <a class="page-scroll" href="#about">About</a>
                     </li>
                     <li>
-                        <a href="#services">Skills</a>
+                        <a class="page-scroll" href="#services">Services</a>
                     </li>
                     <li>
-                        <a href="#contact">Contact</a>
+                        <a class="page-scroll" href="#dash">Pricing</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
-        <!-- /.container -->
+        <!-- /.container-fluid -->
     </nav>
 
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <img class="mainImg"src="img/omniseasonlogoMain.png" alt="logo"/>
+                <hr>
+                <p>Changing the world of property maintenance.</p>
+                <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
+            </div>
+        </div>
+    </header>
 
-    <!-- Header -->
-    <a name="about"></a>
-    <div class="intro-header">
+    <section class="bg-primary" id="about">
         <div class="container">
-
             <div class="row">
-                <div class="col-lg-12">
-                    <div class="intro-message">
-                        <h1>Caden McBride</h1>
-                        <h3>Software Engineer</h3>
-                        <hr class="intro-divider">
-                        <ul class="list-inline intro-social-buttons">
-                            <li>
-                                <a href="https://twitter.com/McbrideCaden" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/mcbride878" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                            </li>
-                            <li>
-                                <a href="https://www.linkedin.com/pub/caden-mcbride/ba/10/89a" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
-                            </li>
-                        </ul>
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">The Difference</h2>
+                    <hr class="light">
+                    <p class="text-faded">We are changeing the world of property maintenance. With our software requesting a bid has been simplified, with modern technology and the best tradesmen we will have a bid at the click of a button and the best work to back it up. We are taking over property maintenance. </p>
+                    <a href="#calculator" class="btn btn-default btn-xl">Request Bid.</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">What We Offer</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa-4x glyphicon glyphicon-leaf wow bounceIn text-primary"></i>
+                        <h3>Lawn Care</h3>
+                        <p class="text-muted">We Work fast, Hard and we pay attention to detail. After we are done with your lawn you wont even recognize it.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa-4x glyphicon glyphicon-picture wow bounceIn text-primary" data-wow-delay=".1s"></i>
+                        <h3>Window Cleaning</h3>
+                        <p class="text-muted">The only thing we advise after we clean your windows, is making sure you can pick up all the birds.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa-4x glyphicon glyphicon-tint wow bounceIn text-primary" data-wow-delay=".2s"></i>
+                        <h3>Pool Service</h3>
+                        <p class="text-muted">We take pool cleaning very serious, everytime you get in your pool we want it to feel like its fresh water from alaska glaciers.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa-4x glyphicon glyphicon-road wow bounceIn text-primary" data-wow-delay=".3s"></i>
+                        <h3>Snow Removal</h3>
+                        <p class="text-muted">From the time you see the the first snow flake we will be on the property making sure its where you want it.</p>
                     </div>
                 </div>
             </div>
-
         </div>
-        <!-- /.container -->
+    </section>
 
-    </div>
-    <!-- /.intro-header -->
+<section id="dash" class="dash">
+<h2>Pricing Dashboard</h2>
+    <p>Hover your mouse over the desired service to get pricing from high to low.</p>
+<style>
+body{
+    
+    margin:50px auto;
+}
+path {  stroke: #fff; }
+path:hover {  opacity:0.9; }
+rect:hover {  fill:gray; }
+.axis {  font: 10px sans-serif; }
+.legend tr{    border-bottom:1px solid grey; }
+.legend tr:first-child{    border-top:1px solid grey; }
 
-    <!-- Page Content -->
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
 
-	<a  name="services"></a>
-    <div class="content-section-a">
+.x.axis path {  display: none; }
+.legend{
+    margin-bottom:76px;
+    display:inline-block;
+    border-collapse: collapse;
+    border-spacing: 0px;
 
+}
+.legend td{
+    padding:4px 5px;
+    vertical-align:bottom;
+}
+.legendFreq, .legendPerc{
+    align:right;
+    width:50px;
+}
+
+</style>
+<body>
+<div id='dashboard'>
+</div>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script>
+function dashboard(id, fData){
+    var barColor = 'silver';
+    function segColor(c){ return {low:"#00913e", mid:"#8FD127",high:"silver"}[c]; }
+    
+    // compute total for each Service.
+    fData.forEach(function(d){d.total=d.freq.low+d.freq.mid+d.freq.high;});
+    
+    // function to handle histogram.
+    function histoGram(fD){
+        var hG={},    hGDim = {t: 60, r: 0, b: 30, l: 0};
+        hGDim.w = 500 - hGDim.l - hGDim.r, 
+        hGDim.h = 300 - hGDim.t - hGDim.b;
+            
+        //create svg for histogram.
+        var hGsvg = d3.select(id).append("svg")
+            .attr("width", hGDim.w + hGDim.l + hGDim.r)
+            .attr("height", hGDim.h + hGDim.t + hGDim.b).append("g")
+            .attr("transform", "translate(" + hGDim.l + "," + hGDim.t + ")");
+
+        // create function for x-axis mapping.
+        var x = d3.scale.ordinal().rangeRoundBands([0, hGDim.w], 0.1)
+                .domain(fD.map(function(d) { return d[0]; }));
+
+        // Add x-axis to the histogram svg.
+        hGsvg.append("g").attr("class", "x axis")
+            .attr("transform", "translate(0," + hGDim.h + ")")
+            .call(d3.svg.axis().scale(x).orient("bottom"));
+
+        // Create function for y-axis map.
+        var y = d3.scale.linear().range([hGDim.h, 0])
+                .domain([0, d3.max(fD, function(d) { return d[1]; })]);
+
+        // Create bars for histogram to contain rectangles and freq labels.
+        var bars = hGsvg.selectAll(".bar").data(fD).enter()
+                .append("g").attr("class", "bar");
+        
+        //create the rectangles.
+        bars.append("rect")
+            .attr("x", function(d) { return x(d[0]); })
+            .attr("y", function(d) { return y(d[1]); })
+            .attr("width", x.rangeBand())
+            .attr("height", function(d) { return hGDim.h - y(d[1]); })
+            .attr('fill',barColor)
+            .on("mouseover",mouseover)// mouseover is defined below.
+            .on("mouseout",mouseout);// mouseout is defined below.
+            
+        //Create the frequency labels above the rectangles.
+        bars.append("text").text(function(d){ return d3.format(",")(d[1])})
+            .attr("x", function(d) { return x(d[0])+x.rangeBand()/2; })
+            .attr("y", function(d) { return y(d[1])-5; })
+            .attr("text-anchor", "middle");
+        
+        function mouseover(d){  // utility function to be called on mouseover.
+            // filter for selected Service.
+            var st = fData.filter(function(s){ return s.Service == d[0];})[0],
+                nD = d3.keys(st.freq).map(function(s){ return {type:s, freq:st.freq[s]};});
+               
+            // call update functions of pie-chart and legend.    
+            pC.update(nD);
+            leg.update(nD);
+        }
+        
+        function mouseout(d){    // utility function to be called on mouseout.
+            // reset the pie-chart and legend.    
+            pC.update(tF);
+            leg.update(tF);
+        }
+        
+        // create function to update the bars. This will be used by pie-chart.
+        hG.update = function(nD, color){
+            // update the domain of the y-axis map to reflect change in frequencies.
+            y.domain([0, d3.max(nD, function(d) { return d[1]; })]);
+            
+            // Attach the new data to the bars.
+            var bars = hGsvg.selectAll(".bar").data(nD);
+            
+            // transition the height and color of rectangles.
+            bars.select("rect").transition().duration(500)
+                .attr("y", function(d) {return y(d[1]); })
+                .attr("height", function(d) { return hGDim.h - y(d[1]); })
+                .attr("fill", color);
+
+            // transition the frequency labels location and change value.
+            bars.select("text").transition().duration(500)
+                .text(function(d){ return d3.format(",")(d[1])})
+                .attr("y", function(d) {return y(d[1])-5; });            
+        }        
+        return hG;
+    }
+    
+    // function to handle pieChart.
+    function pieChart(pD){
+        var pC ={},    pieDim ={w:250, h: 250};
+        pieDim.r = Math.min(pieDim.w, pieDim.h) / 2;
+                
+        // create svg for pie chart.
+        var piesvg = d3.select(id).append("svg")
+            .attr("width", pieDim.w).attr("height", pieDim.h).append("g")
+            .attr("transform", "translate("+pieDim.w/2+","+pieDim.h/2+")");
+        
+        // create function to draw the arcs of the pie slices.
+        var arc = d3.svg.arc().outerRadius(pieDim.r - 10).innerRadius(0);
+
+        // create a function to compute the pie slice angles.
+        var pie = d3.layout.pie().sort(null).value(function(d) { return d.freq; });
+
+        // Draw the pie slices.
+        piesvg.selectAll("path").data(pie(pD)).enter().append("path").attr("d", arc)
+            .each(function(d) { this._current = d; })
+            .style("fill", function(d) { return segColor(d.data.type); })
+            .on("mouseover",mouseover).on("mouseout",mouseout);
+
+        // create function to update pie-chart. This will be used by histogram.
+        pC.update = function(nD){
+            piesvg.selectAll("path").data(pie(nD)).transition().duration(500)
+                .attrTween("d", arcTween);
+        }        
+        // Utility function to be called on mouseover a pie slice.
+        function mouseover(d){
+            // call the update function of histogram with new data.
+            hG.update(fData.map(function(v){ 
+                return [v.Service,v.freq[d.data.type]];}),segColor(d.data.type));
+        }
+        //Utility function to be called on mouseout a pie slice.
+        function mouseout(d){
+            // call the update function of histogram with all data.
+            hG.update(fData.map(function(v){
+                return [v.Service,v.total];}), barColor);
+        }
+        // Animating the pie-slice requiring a custom function which specifies
+        // how the intermediate paths should be drawn.
+        function arcTween(a) {
+            var i = d3.interpolate(this._current, a);
+            this._current = i(0);
+            return function(t) { return arc(i(t));    };
+        }    
+        return pC;
+    }
+    
+    // function to handle legend.
+    function legend(lD){
+        var leg = {};
+            
+        // create table for legend.
+        var legend = d3.select(id).append("table").attr('class','legend');
+        
+        // create one row per segment.
+        var tr = legend.append("tbody").selectAll("tr").data(lD).enter().append("tr");
+            
+        // create the first column for each segment.
+        tr.append("td").append("svg").attr("width", '16').attr("height", '16').append("rect")
+            .attr("width", '16').attr("height", '16')
+            .attr("fill",function(d){ return segColor(d.type); });
+            
+        // create the second column for each segment.
+        tr.append("td").text(function(d){ return d.type;});
+
+        // create the third column for each segment.
+        tr.append("td").attr("class",'legendFreq')
+            .text(function(d){ return d3.format(",")(d.freq);});
+
+        // create the fourth column for each segment.
+        tr.append("td").attr("class",'legendPerc')
+            .text(function(d){ return getLegend(d,lD);});
+
+        // Utility function to be used to update the legend.
+        leg.update = function(nD){
+            // update the data attached to the row elements.
+            var l = legend.select("tbody").selectAll("tr").data(nD);
+
+            // update the frequencies.
+            l.select(".legendFreq").text(function(d){ return d3.format(",")(d.freq);});
+
+            // update the percentage column.
+            l.select(".legendPerc").text(function(d){ return getLegend(d,nD);});        
+        }
+        
+        function getLegend(d,aD){ // Utility function to compute percentage.
+            return d3.format("%")(d.freq/d3.sum(aD.map(function(v){ return v.freq; })));
+        }
+
+        return leg;
+    }
+    
+    // calculate total frequency by segment for all Service.
+    var tF = ['low','mid','high'].map(function(d){ 
+        return {type:d, freq: d3.sum(fData.map(function(t){ return t.freq[d];}))}; 
+    });    
+    
+    // calculate total frequency by Service for all segment.
+    var sF = fData.map(function(d){return [d.Service,d.total];});
+
+    var hG = histoGram(sF), // create the histogram.
+        pC = pieChart(tF), // create the pie-chart.
+        leg= legend(tF);  // create the legend.
+}
+</script>
+
+<script>
+var freqData=[
+{Service:'Lawns',freq:{low:20, mid:45, high:80}}
+,{Service:'Pools',freq:{low:70, mid:83, high:124}}
+,{Service:'Gutters',freq:{low:50, mid:142, high:500}}
+,{Service:'SnowPlow',freq:{low:68, mid:642, high:1862}}
+,{Service:'Lights',freq:{low:46, mid:96, high:200}}
+,{Service:'Sprinklers',freq:{low:1619, mid:2560, high:3200}}
+,{Service:'Window Cleaning',freq:{low:220, mid:530, high:1203}}
+];
+
+dashboard('#dashboard',freqData);
+</script>
+</section>
+
+    <section id="contact">
         <div class="container">
             <div class="row">
-                <div class="col-lg-5 col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">Programming</h2>
-                    <p class="lead">I love algorithms, and full stack development.
-                    <ul>
-                        <li>JavaScript</li>
-                        <li>AngularJS</li>
-                        <li>React</li>
-                        <li>Node.Js</li>
-                        <li>MongoDB</li>
-                        <li>JQuery</li>
-                        <li>MQL</li>
-
-                    </ul></p>
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Want to get started?</h2>
+                    <hr class="primary">
+                    <p>Ready to start your next project with us? That's great! There are a couple ways to get started, that is one of the benifits of being with Omni Season. You can call, or email Omni Seasons for us to come give you an estimate.</p>
+                    </br>
+                    <p> Or you can use our Omni Calculator, This is a really simple tool where you can get a estamate on your property for free, with no obligations. Just fill out your property information and hit the submit button!</p>
                 </div>
-                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive" src="img/ipad.PNG" alt="">
+                <div class="col-lg-4 col-lg-offset-2 text-center">
+                    <i class="fa fa-phone fa-3x wow bounceIn"></i>
+                    <p>801-631-3646</p>
                 </div>
-            </div>
-
-        </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.content-section-a -->
-
-    <div class="content-section-b">
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">Check Out My Projects<br/><a target="_blank" href="https://github.com/mcbride878/bitcurve">On Github</a></h2>
-                    <p class="lead"> </p>
-                </div>
-                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                    <img class="img-responsive" src="img/dog.PNG" alt="">
-                </div>
-            </div>
-
-        </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.content-section-b -->
-
-    <div class="content-section-a">
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-5 col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">Other talents</h2>
-                    <p class="lead">I'm know to be seen on the ping pong table. I also have a mean golf swing.</p>
-                </div>
-                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive" src="img/phones.PNG" alt="">
-                </div>
-            </div>
-
-        </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.content-section-a -->
-
-	<a  name="contact"></a>
-    <div class="banner">
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-6">
-                    <h2>Check Me Out:</h2>
-                </div>
-                <div class="col-lg-6">
-                    <ul class="list-inline banner-social-buttons">
-                        <li>
-                            <a href="https://twitter.com/McbrideCaden" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/mcbride878" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/pub/caden-mcbride/ba/10/89a" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-        </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.banner -->
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <ul class="list-inline">
-                        <li>
-                            <a href="#">Home</a>
-                        </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                    
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a href="#services">Skills</a>
-                        </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li>
-                            <a href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                    <p class="copyright text-muted small">Copyright &copy; McBride Algorithms 2015. All Rights Reserved</p>
+                <div class="col-lg-4 text-center">
+                    <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                    <p><a href="torin@omniseasonutah.com">Email Us</a></p>
                 </div>
             </div>
         </div>
-    </footer>
+    </section>
+
+  <section class="calculator" id="calculator">
+    <aside class="bg-dark">
+        <div class="container text-center">
+            <div class="call-to-action">
+                <h1>Service Calculator</h1>
+                </br>
+                    <div class="dropdown">
+                      <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Service
+                        <span class="caret"></span>
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <li><a href="#">Lawn Maintenance</a></li>
+                        <li><a href="#">Pool Maintenance</a></li>
+                        <li><a href="#">Window Cleaning</a></li>
+                        <li><a href="#">Snow Removal</a></li>
+                      </ul>
+                    </div>
+                <h3>Size of Property</h3>
+                    <div class="btn-group" role="group" aria-label="buttonMenu">
+                       <button type="button" class="btn btn-default">Small</button>
+                       <button type="button" class="btn btn-default">Medium</button>
+                       <button type="button" class="btn btn-default">Large</button>
+                    </div>
+                <h3>Zip Code</h3>
+                  </br>
+                      <input class="zipcodeInput" type="text"/>
+                  </br>
+                  <h3>Services Per Month</h3>
+                  </br>
+<!-- 
+                    <div class="btn-toolbar" role="toolbar" aria-label="...">
+                      <div class="btn-group" role="group" aria-label="...">...</div>
+                      <div class="btn-group" role="group" aria-label="...">...</div>
+                      <div class="btn-group" role="group" aria-label="...">...</div>
+                    </div>
+ -->
+                <a href="#" class="btn btn-default btn-xl wow tada">Request Bid</a>
+            </div>
+            <div></div>
+        </div>
+    </aside>
+
+  </section>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/wow.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/creative.js"></script>
 
 </body>
 
