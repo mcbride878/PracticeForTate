@@ -81,13 +81,9 @@ section {
 aside {
     padding: 50px 0;
 }
-/*.openPage {
-    font-weight: 40;
-    font-size: 15px;
-    color: white;
-    background-size: 18px;
-    background-color: black;
-}*/
+.openPage {
+    font-weight: 50px;
+}
 
 .dash {
     margin-left: 17%;
@@ -279,13 +275,8 @@ header .header-content .header-content-inner p {
     header .header-content .header-content-inner p {
         margin-right: auto;
         margin-left: auto;
-        max-width: 58%;
+        max-width: 80%;
         font-size: 18px;
-        color: white;
-       /* background-color: #8fd127;*/
-        font-weight: 20;
-        /*text-transform: uppercase;*/
-
     }
 }
 

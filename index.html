@@ -53,6 +53,18 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
+                       <a class="fa fa-facebook" href="#" target="_self"></a>
+                    </li>
+                    <li>
+                       <a class="fa fa-twitter" href="#" target="_self"></a>
+                    </li>
+                    <li>
+                       <a class="fa fa-linkedin" href="#" target="_self"></a>
+                    </li>
+                    <li>
+                        <a class="fa fa-google-plus" href="#" target="_self"></a>
+                    </li>
+                    <li>
                         <a class="page-scroll" href="#about">About</a>
                     </li>
                     <li>
@@ -90,6 +102,7 @@
                     <hr class="light">
                     <p class="text-faded">We are changeing the world of property maintenance. With our software requesting a bid has been simplified, with modern technology and the best tradesmen we will have a bid at the click of a button and the best work to back it up. We are taking over property maintenance. </p>
                     <a href="#calculator" class="btn btn-default btn-xl page-scroll">Request Bid.</a>
+                    <a href="sideChat.html" class="btn btn-default btn-xl">Chat.</a>
                 </div>
             </div>
         </div>
@@ -188,8 +201,8 @@ function dashboard(id, fData){
     function segColor(c){ return {low:"#00913e", mid:"#8FD127",high:"silver"}[c]; }
     
     // compute total for each Service.
-    fData.forEach(function(d){d.total=d.freq.low+d.freq.mid+d.freq.high;});
-    
+    fData.forEach(function(d){d.total=Math.round(d.freq.low+d.freq.mid+d.freq.high/3);});
+
     // function to handle histogram.
     function histoGram(fD){
         var hG={},    hGDim = {t: 60, r: 0, b: 30, l: 0};
@@ -362,34 +375,34 @@ function dashboard(id, fData){
         
         function getLegend(d,aD){ // Utility function to compute percentage.
             return d3.format("%")(d.freq/d3.sum(aD.map(function(v){ return v.freq; })));
-        }
-
-        return leg;
-    }
-    
+        }                                           
+                                         
+        return leg;                    
+    }                                     
+                                                            
     // calculate total frequency by segment for all Service.
     var tF = ['low','mid','high'].map(function(d){ 
         return {type:d, freq: d3.sum(fData.map(function(t){ return t.freq[d];}))}; 
-    });    
-    
+    });                           
+                                 
     // calculate total frequency by Service for all segment.
     var sF = fData.map(function(d){return [d.Service,d.total];});
-
+                                   
     var hG = histoGram(sF), // create the histogram.
         pC = pieChart(tF), // create the pie-chart.
         leg= legend(tF);  // create the legend.
 }
 </script>
-
+        
 <script>
 var freqData=[
-{Service:'Lawns',freq:{low:20, mid:45, high:80}}
-,{Service:'Pools',freq:{low:70, mid:83, high:124}}
+{Service:'Lawns',freq:{low:20, mid:40, high:80}}
+,{Service:'Pools',freq:{low:70, mid:84, high:124}}
 ,{Service:'Gutters',freq:{low:50, mid:142, high:500}}
 ,{Service:'SnowPlow',freq:{low:68, mid:642, high:1862}}
 ,{Service:'Lights',freq:{low:46, mid:96, high:200}}
-,{Service:'Sprinklers',freq:{low:1619, mid:2560, high:3200}}
-,{Service:'Window Cleaning',freq:{low:220, mid:530, high:1203}}
+,{Service:'Sprinklers',freq:{low:1610, mid:2560, high:3200}}
+,{Service:'Window Cleaning',freq:{low:220, mid:530, high:1200}}
 ];
 
 dashboard('#dashboard',freqData);
@@ -409,10 +422,12 @@ dashboard('#dashboard',freqData);
                 <div class="col-lg-4 col-lg-offset-2 text-center">
                     <i class="fa fa-phone fa-3x wow bounceIn"></i>
                     <p>801-631-3646</p>
+
                 </div>
+
                 <div class="col-lg-4 text-center">
                     <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                    <p><a href="torin@omniseasonutah.com">Email Us</a></p>
+                    <p><a href="mailto:torin@omniseasonutah.com">Email Us</a></p>
                 </div>
             </div>
         </div>
@@ -464,6 +479,13 @@ dashboard('#dashboard',freqData);
     </aside>
 
   </section>
+   <footer>
+        <div class="container text-center">
+            <p>Copyright &copy; OmniSeason LLC</p>
+        </div>
+
+
+    </footer>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
