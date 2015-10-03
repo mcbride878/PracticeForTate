@@ -100,9 +100,9 @@
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="section-heading">The Difference</h2>
                     <hr class="light">
-                    <p class="text-faded">We are changeing the world of property maintenance. With our software requesting a bid has been simplified, with modern technology and the best tradesmen we will have a bid at the click of a button and the best work to back it up. We are taking over property maintenance. </p>
-                    <a href="#calculator" class="btn btn-default btn-xl page-scroll">Request Bid.</a>
-                    <a href="sideChat.html" class="btn btn-default btn-xl">Chat.</a>
+                    <p class="text-faded">We are changing the world of property maintenance. With our software, requesting a bid has been simplified. With modern technology and the best tradesmen, we will have a bid at the click of a button and the best work to back it up. We are taking over property maintenance. </p>
+                    <a href="#calculator" class="btn btn-default btn-xl page-scroll">Request Bid</a>
+                    <a href="sideChat.html" class="btn btn-default btn-xl">Chat</a>
                 </div>
             </div>
         </div>
@@ -123,28 +123,28 @@
                     <div class="service-box">
                         <i class="fa-4x glyphicon glyphicon-leaf wow bounceIn text-primary"></i>
                         <h3>Property Maintenance</h3>
-                        <p class="text-muted">With aquired companys we have the exsperience and the talent. We have the best of the best in the western states.</p>
+                        <p class="text-muted">With aquired companies, we have the exsperience and the talent. We have the best of the best in the western states.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa-4x glyphicon glyphicon-picture wow bounceIn text-primary" data-wow-delay=".1s"></i>
-                        <h3>Window and Solar Panel</h3>
-                        <p class="text-muted">Being involved with some of the largest solor panel plants in the united states, they demand perfection. We are obliged to give it to them.</p>
+                        <h3>Window and Solar Panels</h3>
+                        <p class="text-muted">Being involved with some of the largest solor panel plants in the United States, they demand perfection. We are obliged to give it to them.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa-4x glyphicon glyphicon-tint wow bounceIn text-primary" data-wow-delay=".2s"></i>
                         <h3>Pool Service</h3>
-                        <p class="text-muted">The technicians in our pool fleet are trained exstensivly, there is no water system they cant handle.</p>
+                        <p class="text-muted">The technicians in our pool fleet are trained exstensivly, there is no water system that they cant handle.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa-4x glyphicon glyphicon-road wow bounceIn text-primary" data-wow-delay=".3s"></i>
                         <h3>Snow Removal</h3>
-                        <p class="text-muted">We offer snow removal in all of the western states, anything from Toll road ways, to your local grocery store.</p>
+                        <p class="text-muted">We offer snow removal in all of the western states, anything from toll road ways, to your local grocery store.</p>
                     </div>
                 </div>
             </div>
@@ -413,11 +413,11 @@ dashboard('#dashboard',freqData);
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Want to get started?</h2>
+                    <h2 class="section-heading">Lets get started.</h2>
                     <hr class="primary">
-                    <p>Ready to start your next project with us? That's great! There are a couple ways to get started, that is one of the benifits of being with Omni Season. You can call, or email Omni Seasons for us to come give you an estimate.</p>
+                    <p>Ready to start your next project with us? There are a couple of ways to get started. One of the benifits of being with OmniSeason is You can call, or email OmniSeasons for us to come give you an estimate.</p>
                     </br>
-                    <p> Or you can use our Omni Calculator, This is a really simple tool where you can get a estamate on your property for free, with no obligations. Just fill out your property information and hit the submit button!</p>
+                    <p> Or you can use our OmniCalculator. This is a simple tool that we've created where you can get a estamate on your property for free, with no obligations. Just fill out your property information and hit the submit button!</p>
                 </div>
                 <div class="col-lg-4 col-lg-offset-2 text-center">
                     <i class="fa fa-phone fa-3x wow bounceIn"></i>
@@ -437,7 +437,7 @@ dashboard('#dashboard',freqData);
     <aside class="bg-dark">
         <div class="container text-center">
             <div class="call-to-action">
-                <h1>Omni Calculator</h1>
+                <h1>OmniCalculator</h1>
                 </br>
                     <div class="dropdown">
                       <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -472,9 +472,21 @@ dashboard('#dashboard',freqData);
                     </div>
                     </br>
 
-                <a href="#" class="btn btn-default btn-xl wow tada">Request Bid</a>
+                <!-- <a href="#" class="btn btn-default btn-xl wow tada">Request Bid</a> -->
             </div>
-            <div></div>
+            <div>
+                <form action="/charge" method="POST">
+                  <script
+                    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                    data-key="pk_test_6pRNASCoBOKtIshFeQd4XMUh"
+                    data-image="/img/documentation/checkout/marketplace.png"
+                    data-name="Stripe.com"
+                    data-description="2 widgets"
+                    data-amount="20000"
+                    data-locale="auto">
+                  </script>
+                </form>
+            </div>
         </div>
     </aside>
 
